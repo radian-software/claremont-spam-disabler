@@ -3,7 +3,7 @@
 Have you ever had the misfortune of seeing an email like this?
 
 <p align="center"> <img src="screenshot.png" alt="Screenshot of a spam
-email sent by the Claremont Colleges" height="200"/> </p>
+email sent by the Claremont Colleges" height="400"/> </p>
 
 Most likely not, unless you at one point attended a college in the
 [Claremont Colleges consortium](https://www.claremont.edu/). However,
