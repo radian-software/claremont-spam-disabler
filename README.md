@@ -31,6 +31,10 @@ Service](https://developers.google.com/apps-script/reference/gmail) to
 automate the advanced task of clicking the `Release` button and
 archiving the email!
 
+(This script may also work with other organizations that use [Cisco
+Ironport](https://www.ironportstore.com/Email-Security-Hosted-Cloud.asp),
+but no guarantees.)
+
 ## Usage
 
 Go to <https://script.google.com/home> and create a new project. Paste
