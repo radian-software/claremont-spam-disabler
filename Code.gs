@@ -6,9 +6,7 @@ function main() {
       let wasSuccessful = true;
       for (const message of thread.getMessages()) {
         if (message.getSubject() === SPAM_SUBJECT && message.isInInbox()) {
-          for (const match of message
-            .getPlainBody()
-            .matchAll(/<(https:\/\/[^>]+action=Release[^>]+)>/g)) {
+          for (const match of message.getPlainBody().matchAll(/<(https:\/\/[^>]+action=Release[^>]+)>/g)) {
             const link = match[1];
             console.log("Fetching:", link);
             const resp = UrlFetchApp.fetch(link);
@@ -20,8 +18,8 @@ function main() {
         }
       }
       if (wasSuccessful) {
-        console.log("All messages released; moving thread to archive.");
-        thread.moveToArchive();
+        console.log("All messages released; deleting thread.");
+        thread.moveToTrash();
       } else {
         console.log("Since there were errors, leaving thread in inbox.");
       }
